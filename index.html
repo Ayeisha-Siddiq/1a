@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial;
+            background: #eee;
+        }
+        form {
+            width: 250px;
+            background: #fff;
+            padding: 15px;
+            margin: 50px auto;
+        }
+        input, button {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+        }
+        button {
+            background: white;
+            color: green;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <input type="text" placeholder="Username" required>
+        <input type="password" placeholder="Password" required>
+        <input type="password" placeholder="Confirm Password" required>
+        <button type="button" id="btn" onclick="reg()">Register</button>
+        <p id="msg"></p>
+    </form>
+
+    <script>
+        function reg() {
+            document.getElementById("msg").innerHTML = "Registration successful!";
+        }
+    </script>
+</body>
+</html>
